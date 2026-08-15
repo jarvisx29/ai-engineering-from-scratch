@@ -1,0 +1,41 @@
+
+LOG OF MY START OF MY AI ENGINEERING JOURNEY ; THE FIRST PRE STUFF
+
+
+manoprasanna@Manos-MacBook-Pro dele % git --version
+git version 2.39.2 (Apple Git-143)
+manoprasanna@Manos-MacBook-Pro dele % git clone https://github.com/jarvisx29/ai-engineering-from-scratch.git 
+Cloning into 'ai-engineering-from-scratch'...
+remote: Enumerating objects: 18838, done.
+remote: Total 18838 (delta 0), reused 0 (delta 0), pack-reused 18838 (from 1)
+Receiving objects: 100% (18838/18838), 13.49 MiB | 8.84 MiB/s, done.
+Resolving deltas: 100% (8074/8074), done.
+Updating files: 100% (3197/3197), done.
+manoprasanna@Manos-MacBook-Pro dele % cd ai-engineering-from-scratch
+Public
+zsh: command not found: Public
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % cd ai-engineering-from-scratch
+cd: no such file or directory: ai-engineering-from-scratch
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % cd ai-engineering-from-scratch
+cd: no such file or directory: ai-engineering-from-scratch
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git remote -v
+origin  https://github.com/jarvisx29/ai-engineering-from-scratch.git (fetch)
+origin  https://github.com/jarvisx29/ai-engineering-from-scratch.git (push)
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git config --global user.name "Mano Prasanna"
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git config --global user.email "gmanoprasanna@gmail.com"
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git checkout -b my-progress"
+dquote> "
+fatal: 'my-progress
+' is not a valid branch name
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git checkout -b my-progress
+
+Switched to a new branch 'my-progress'
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git branch
+  main
+* my-progress
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git status
+On branch my-progress
+nothing to commit, working tree clean
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git add git-practice.txt 
+fatal: pathspec 'git-practice.txt' did not match any files
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % 
