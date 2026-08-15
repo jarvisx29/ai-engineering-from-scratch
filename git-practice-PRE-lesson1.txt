@@ -38,4 +38,304 @@ On branch my-progress
 nothing to commit, working tree clean
 manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git add git-practice.txt 
 fatal: pathspec 'git-practice.txt' did not match any files
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git status
+On branch my-progress
+nothing to commit, working tree clean
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git add git-practice-PRE-lesson1.txt
+fatal: pathspec 'git-practice-PRE-lesson1.txt' did not match any files
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git status
+On branch my-progress
+nothing to commit, working tree clean
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git branch
+  main
+* my-progress
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git status
+On branch my-progress
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git-practice-PRE-lesson1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git add git-practice-PRE-lesson1.txt
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git status
+On branch my-progress
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   git-practice-PRE-lesson1.txt
+
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git commit -m "MY FIRST EVER COMMIT OF MY OWN "
+[my-progress b1196694] MY FIRST EVER COMMIT OF MY OWN
+ 1 file changed, 41 insertions(+)
+ create mode 100644 git-practice-PRE-lesson1.txt
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git push orgin my-progress
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git push my-progress
+fatal: 'my-progress' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git push origin my-progress
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 976 bytes | 976.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'my-progress' on GitHub by visiting:
+remote:      https://github.com/jarvisx29/ai-engineering-from-scratch/pull/new/my-progress
+remote: 
+To https://github.com/jarvisx29/ai-engineering-from-scratch.git
+ * [new branch]        my-progress -> my-progress
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git log --online
+fatal: unrecognized argument: --online
+manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % git log --oneline
+b1196694 (HEAD -> my-progress, origin/my-progress) MY FIRST EVER COMMIT OF MY OWN
+7c332350 (origin/main, origin/HEAD, main) chore(site): rebuild data.js
+cd5bd53d fix(i18n): make translation publishing retry-safe (#401)
+29162402 chore(site): rebuild data.js
+69502d8e feat: add AI-native certification curriculum and learning surfaces (#395)
+6b10711e fix(site): keep read-aloud going when the speech engine drops an utterance (#394)
+89317760 feat(site): read articles aloud with the browser speech engine (#369)
+37cc6b89 chore(site): rebuild data.js
+5d735268 fix(readme): restore count-pinned toolkit sentence for the counts-sync bot (#390)
+7953bfad fix(i18n): shard translation CI by phase + commit README translations + fix language picker (#387)
+169ae308 chore(site): rebuild data.js
+aa9adcdd fix(phase-01/15): chi-squared p-value was 7.5x too large (#376)
+f60641e0 chore(site): rebuild data.js
+62cdefbe feat(site): full curriculum figure coverage (503 lessons) + lang-picker CSS cachebust (#380)
+bc4c8e41 chore(site): rebuild data.js
+dda194f8 fix(quiz): correct answer is always in the same position (slot B) (#381)
+8341990b chore(site): rebuild data.js
+a3383a08 fix(phase-01/15): t-test p-value collapsed to 0 at large df (#378)
+0996df53 chore(site): rebuild data.js
+3227f176 feat(i18n): free NLLB-200 translation pipeline, zero repo bloat (#379)
+7157ca74 chore(site): rebuild data.js
+d89b4bfc fix(phase-02/15): forecast fed the lag vector in reverse order (#351)
+ff1c5aec chore(site): rebuild data.js
+c77783ec fix(phase-02/10): total_error omitted the noise term (#352)
+316ff778 chore(site): rebuild data.js
+92360b0f fix(phase-14/38): coverage delta tripped on float error (#353)
+451b7fb0 chore(site): rebuild data.js
+771df0fe fix(phase-11/09): calculator got the operator token, not the expression (#354)
+969e8c99 fix(phase-11/10): eval verdict was nondeterministic (#355)
+94a20d7a 📱 Fix responsive website UI (#299)
+6f05ad3f fix(site): guard null lessonQuizPromise and stale DOM elements in les… (#349)
+87284b76 chore(site): rebuild data.js
+d1cb9d19 feat: book edition pipeline, fundamentals-first headlines, animated figures, verified bug fixes (#348)
+e8986635 chore(site): rebuild data.js
+fef83fa6 fix(scripts): build README count catalog when absent (#334)
+950dd970 chore(site): rebuild data.js
+a7ef08e0 Update dataset source from 'imdb' to 'stanfordnlp/imdb' (#309)
+eebd0c11 chore(site): rebuild data.js
+5687a471 docs(phase-00/01): add macOS/Apple Silicon branch to Step 6 GPU setup (#340)
+1a757152 chore(site): rebuild data.js
+a85300d2 docs(phase-00): add macOS/MPS branch to env-check prompt (#317)
+c8b9b924 chore(site): rebuild data.js
+9e136ec4 Update README
+574a5d6d chore(site): rebuild data.js
+831f93eb fix(site): preview lesson docs from the deploy's branch, not always main (#289)
+148de366 chore(site): rebuild data.js
+cb55ea0c feat(site): curriculum-wide interactive figure system (134 widgets, 13 modules) (#279)
+b963cf63 fix(site): About page dark mode + header overlap (#275)
+d552c62f chore(site): rebuild data.js
+b749aab1 docs(phase-14): close three harness-engineering gaps in Agent Workbench (#274)
+0b2b7292 feat(site): add About page (#270)
+95292efd fix(figures): keep transformer-block labels inside their boxes (#269)
+6db6f19c chore(site): rebuild data.js
+6db6f19c chore(site): rebuild data.js
+4a7c1240 feat(site): SEO/AEO foundation - sitemap, llms.txt, JSON-LD, canonical (#267)
+2babca5e chore(site): rebuild data.js
+533fe6be feat(site): interactive lesson figures + KV-cache sizer (#265)
+a205d33d chore(site): rebuild data.js
+75c22ab4 fix(data-management): update canonical hugging face dataset paths and configs (#180)
+9b761233 chore(site): rebuild data.js
+afcc4a6b Merge pull request #263 from rohitg00/readme-traffic-stats-v2
+d5f26c10 docs(readme): refresh traffic stats to 2026-06-07 (150.6K/241.7K)
+a6cd747a chore(site): rebuild data.js
+b87a15a5 fix(build): sync lessons badge alt text too (CodeRabbit #256)
+fba601c9 fix(build): make syncReadme self-healing and surface stats errors
+c05e1f92 docs(readme): add 30-day traffic proof, sourced from site/stats.json
+33433b85 chore(site): rebuild data.js
+c0d320da Update README.md
+44b9b14e chore(site): rebuild data.js
+a2f95e0c Merge pull request #247 from rohitg00/site-count-sync
+7e151e5f fix(site): sync hardcoded curriculum counts to live total (473 -> 503)
+825ba2ba chore(site): rebuild data.js
+a4fd73bc Merge pull request #246 from rohitg00/index-merged-lessons
+a4accf6c docs(site): index merged-but-unlisted lessons so they render on the site
+e659b4d4 chore(site): rebuild data.js
+a5285f6d Merge pull request #245 from rohitg00/site-fix-tables-diagrams
+d571df8a fix(site): repair table pipe rendering and theme-safe mermaid diagrams
+e4f2f8bf chore(site): rebuild data.js
+d1e000f5 Merge pull request #244 from rohitg00/lesson18-mcp-auth-spec-update
+7be1e78b refactor(mcp-auth): harden lesson 18 validator and client checks
+88ae6033 docs(mcp-auth): update lesson 18 to the MCP 2025-11-25 authorization spec
+cf8ca3f5 chore(site): rebuild data.js
+faaa07dd chore(readme): sync counts
+7cf6217b Merge pull request #212 from rohitg00/feat/phase-19-track-i
+e7910a44 chore(site): rebuild data.js
+1ac33e39 chore(readme): sync counts
+7d4e8ff6 chore(site): rebuild data.js
+b2783996 Merge pull request #215 from rohitg00/feat/phase-19-track-h
+c7e5bdf4 chore(readme): sync counts
+d7ba77d7 Merge pull request #210 from rohitg00/feat/phase-19-track-g
+98229d8b chore(site): rebuild data.js
+69a27a2e chore(readme): sync counts
+40d4c76a Merge pull request #213 from rohitg00/feat/phase-19-track-f
+eec3a48d chore(site): rebuild data.js
+08858fbb chore(readme): sync counts
+e2f378f9 Merge pull request #209 from rohitg00/feat/phase-19-track-e
+86bbb614 chore(site): rebuild data.js
+38350182 Merge pull request #227 from rohitg00/fix/markdown-table-pipe-escapes
+d60af105 fix(phase-00/08): restore cell separator on Toggle terminal row
+c4c9ac98 chore(site): rebuild data.js
+49b82e66 Merge pull request #228 from rohitg00/fix/loose-primitive-usage
+ea940baf fix(phase-11/17): drop 'primitive' for vendor classes; use class / abstraction / API / loop
+2c9ad114 fix(phase-06/08): call the speaker-content split a decomposition, not a primitive
+a954d3dc fix(phase-05/15): say 'decompositions' instead of 'primitives' for LDA vs BERTopic
+759b73d3 fix(phase-05/01): drop 'primitive' label for preprocessing steps
+c09e649a fix(phase-18/03): escape pipes inside inline code so markdown tables render
+d5265625 fix(phase-18/02): escape pipes inside inline code so markdown tables render
+62513056 fix(phase-18/01): escape pipes inside inline code so markdown tables render
+6501a14b fix(phase-13/10): escape pipes inside inline code so markdown tables render
+2f3a9718 fix(phase-13/06): escape pipes inside inline code so markdown tables render
+b6f1bdf9 fix(phase-09/09): escape pipes inside inline code so markdown tables render
+ee29b857 fix(phase-09/08): escape pipes inside inline code so markdown tables render
+9d8a5d0e fix(phase-09/07): escape pipes inside inline code so markdown tables render
+9dd95293 fix(phase-09/06): escape pipes inside inline code so markdown tables render
+93e87cc7 fix(phase-09/03): escape pipes inside inline code so markdown tables render
+7d49b572 fix(phase-09/02): escape pipes inside inline code so markdown tables render
+2bb3f478 fix(phase-09/01): escape pipes inside inline code so markdown tables render
+34cb3fb9 fix(phase-08/09): escape pipes inside inline code so markdown tables render
+c2086d40 fix(phase-08/06): escape pipes inside inline code so markdown tables render
+18da735c fix(phase-08/02): escape pipes inside inline code so markdown tables render
+263cdd0f fix(phase-07/10): escape pipes inside inline code so markdown tables render
+b183d27f fix(phase-07/04): escape pipes inside inline code so markdown tables render
+41a08e38 fix(phase-06/05): escape pipes inside inline code so markdown tables render
+3074c09d fix(phase-00/08): escape pipes inside inline code so markdown tables render
+51a04768 chore(site): rebuild data.js
+47ff7490 Merge pull request #226 from rohitg00/chore/site-readme-counts-473
+7fc6c607 fix(readme): track count 9 -> 4 (only A/B/C/D merged)
+f42257b6 fix(readme,site): align capstone table header + bump catalog meta + fix track range
+b8d760e1 docs: bump README + site to 473 lessons; add Phase 19 deep-build tracks
+9728bfda chore(site): rebuild data.js
+bcfdc9a6 Merge pull request #225 from rohitg00/chore/agents-md-and-site-autorebuild
+0d79ed42 docs(agents-md): trim to public-facing contract; drop internal notes
+ec898065 docs: add AGENTS.md; ci: auto-rebuild site/data.js on main push
+2836555b chore(readme): sync counts
+01f84138 Merge pull request #203 from rohitg00/feat/phase-19-track-d2
+0b9470f3 chore(readme): sync counts
+8f510e2f Merge pull request #204 from rohitg00/feat/phase-19-track-d1
+0c00c3cc chore(readme): sync counts
+c4c79882 Merge pull request #208 from rohitg00/feat/phase-19-track-c1
+2af67147 fix(phase-19/45): skip scaler.update() when loss is non-finite
+55a5819f fix(phase-19/43): close opened shards when dataset lookup fails
+...skipping...
+
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
+  b  ^B  ESC-v      *  Backward one window (or N lines).
+  z                 *  Forward  one window (and set window to N).
+  w                 *  Backward one window (and set window to N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to N).
+  u  ^U             *  Backward one half-window (and set half-window to N).
+  ESC-)  RightArrow *  Right one half screen width (or N positions).
+  ESC-(  LeftArrow  *  Left  one half screen width (or N positions).
+  ESC-}  ^RightArrow   Right to last column displayed.
+  ESC-{  ^LeftArrow    Left  to first column.
+  F                    Forward forever; like "tail -f".
+  ESC-F                Like F but stop when search pattern is found.
+  r  ^R  ^L            Repaint screen.
+  R                    Repaint screen, discarding buffered input.
+        ---------------------------------------------------
+        Default "window" is the screen height.
+        Default "half-window" is half of the screen height.
+ ---------------------------------------------------------------------------
+HELP -- Press RETURN for more, or q when done...skipping...
+62513056 fix(phase-18/01): escape pipes inside inline code so markdown tables render
+6501a14b fix(phase-13/10): escape pipes inside inline code so markdown tables render
+2f3a9718 fix(phase-13/06): escape pipes inside inline code so markdown tables render
+b6f1bdf9 fix(phase-09/09): escape pipes inside inline code so markdown tables render
+ee29b857 fix(phase-09/08): escape pipes inside inline code so markdown tables render
+9d8a5d0e fix(phase-09/07): escape pipes inside inline code so markdown tables render
+9dd95293 fix(phase-09/06): escape pipes inside inline code so markdown tables render
+93e87cc7 fix(phase-09/03): escape pipes inside inline code so markdown tables render
+7d49b572 fix(phase-09/02): escape pipes inside inline code so markdown tables render
+2bb3f478 fix(phase-09/01): escape pipes inside inline code so markdown tables render
+34cb3fb9 fix(phase-08/09): escape pipes inside inline code so markdown tables render
+c2086d40 fix(phase-08/06): escape pipes inside inline code so markdown tables render
+18da735c fix(phase-08/02): escape pipes inside inline code so markdown tables render
+263cdd0f fix(phase-07/10): escape pipes inside inline code so markdown tables render
+b183d27f fix(phase-07/04): escape pipes inside inline code so markdown tables render
+41a08e38 fix(phase-06/05): escape pipes inside inline code so markdown tables render
+3074c09d fix(phase-00/08): escape pipes inside inline code so markdown tables render
+51a04768 chore(site): rebuild data.js
+47ff7490 Merge pull request #226 from rohitg00/chore/site-readme-counts-473
+7fc6c607 fix(readme): track count 9 -> 4 (only A/B/C/D merged)
+f42257b6 fix(readme,site): align capstone table header + bump catalog meta + fix track range
+b8d760e1 docs: bump README + site to 473 lessons; add Phase 19 deep-build tracks
+9728bfda chore(site): rebuild data.js
+bcfdc9a6 Merge pull request #225 from rohitg00/chore/agents-md-and-site-autorebuild
+0d79ed42 docs(agents-md): trim to public-facing contract; drop internal notes
+ec898065 docs: add AGENTS.md; ci: auto-rebuild site/data.js on main push
+2836555b chore(readme): sync counts
+01f84138 Merge pull request #203 from rohitg00/feat/phase-19-track-d2
+0b9470f3 chore(readme): sync counts
+8f510e2f Merge pull request #204 from rohitg00/feat/phase-19-track-d1
+0c00c3cc chore(readme): sync counts
+c4c79882 Merge pull request #208 from rohitg00/feat/phase-19-track-c1
+2af67147 fix(phase-19/45): skip scaler.update() when loss is non-finite
+55a5819f fix(phase-19/43): close opened shards when dataset lookup fails
 manoprasanna@Manos-MacBook-Pro ai-engineering-from-scratch % 
+
+
+AUTHOR'S REPOSITORY
+        │
+        │ FORK
+        ↓
+YOUR GITHUB REPOSITORY
+        │
+        │ CLONE
+        ↓
+YOUR MAC
+        │
+        ↓
+ai-engineering-from-scratch/
+        │
+        ├── phases/
+        ├── .gitignore
+        ├── git-practice.txt
+        └── ...
+              │
+              ↓
+        my-progress branch
+              │
+         git commit
+              │
+         git push
+              ↓
+       YOUR GITHUB REPO
+
+
+
